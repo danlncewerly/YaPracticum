@@ -1,10 +1,7 @@
 import UIKit
 
 final class MovieQuizViewController: UIViewController {
-    
-   
-    
-    
+
     struct QuizQuestion {
         let image: String
         let text: String
@@ -22,14 +19,11 @@ final class MovieQuizViewController: UIViewController {
         let buttonText: String
     }
     
-   
     private var currentQuestionIndex = 0
     
     private var correctAnswers = 0
    
-    
-    
-    private let questions: [QuizQuestion] = [
+    private  let questions: [QuizQuestion] = [
         
         QuizQuestion(
             image: "The Godfather",
@@ -64,11 +58,6 @@ final class MovieQuizViewController: UIViewController {
                      correctAnswer: false)
     ]
     
-    
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -88,11 +77,6 @@ final class MovieQuizViewController: UIViewController {
         
     }
     
-
-    
-    
-    
-    
     @IBAction private func noButtonClicked(_ sender: UIButton) {
         let currentQuestion = questions[currentQuestionIndex]
         let givenAnswer = false
@@ -103,9 +87,6 @@ final class MovieQuizViewController: UIViewController {
         showAnswerResult(isCorrect: givenAnswer == currentQuestion.correctAnswer)
     }
     
-    
-    
-    
     @IBAction private func yesButtonClicked(_ sender: UIButton) {
         let currentQuestion = questions[currentQuestionIndex]
         let givenAnswer = true
@@ -114,9 +95,6 @@ final class MovieQuizViewController: UIViewController {
         
         showAnswerResult(isCorrect: givenAnswer == currentQuestion.correctAnswer)
     }
-    
-
-    
     
     private func show(quiz step: QuizStepViewModel) {
         imageView.image = step.image
@@ -176,9 +154,6 @@ final class MovieQuizViewController: UIViewController {
         
         let action = UIAlertAction(title: result.buttonText, style: .default) { _ in
             self.resetGame()
-            
-
-            
             
         }
         alert.addAction(action)
