@@ -10,11 +10,54 @@
           "red" : "0x60"
         }
       },
+      "display-gamut" : "sRGB",
       "idiom" : "universal"
+    },
+    {
+      "color" : {
+        "color-space" : "display-p3",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0x91",
+          "green" : "0xBF",
+          "red" : "0x79"
+        }
+      },
+      "display-gamut" : "display-P3",
+      "idiom" : "universal"
+    },
+    {
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0x8E",
+          "green" : "0xC2",
+          "red" : "0x60"
+        }
+      },
+      "display-gamut" : "sRGB",
+      "idiom" : "iphone"
+    },
+    {
+      "color" : {
+        "color-space" : "display-p3",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0x91",
+          "green" : "0xBF",
+          "red" : "0x79"
+        }
+      },
+      "display-gamut" : "display-P3",
+      "idiom" : "iphone"
     }
   ],
   "info" : {
     "author" : "xcode",
     "version" : 1
+  },
+  "properties" : {
+    "localizable" : true
   }
 }
