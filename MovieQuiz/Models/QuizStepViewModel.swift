@@ -1,3 +1,11 @@
+//
+//  QuizStepViewModel.swift
+//  MovieQuiz
+//
+//  Created by Luba Shabunkina on 29/05/2024.
+//
+
+import Foundation
 import UIKit
 
 struct QuizStepViewModel {
@@ -5,4 +13,3 @@ struct QuizStepViewModel {
     let question: String
     let questionNumber: String
 }
-
